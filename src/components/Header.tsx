@@ -34,29 +34,23 @@ export default function Header() {
           </nav>
 
           <div className="md:hidden">
-            <MobileMenu />
+            <details className="relative">
+              <summary className="list-none text-white cursor-pointer p-3 -mr-3">
+                <svg className="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+              </summary>
+              <div className="absolute right-0 mt-2 w-56 bg-white rounded-lg shadow-lg py-2 z-50 border border-gray-200">
+                <Link href="/bany" className="block px-4 py-3 text-[#36454F] hover:bg-[#F5F5DC] text-base font-medium border-b border-gray-100">Бани</Link>
+                <Link href="/doma" className="block px-4 py-3 text-[#36454F] hover:bg-[#F5F5DC] text-base font-medium border-b border-gray-100">Дома</Link>
+                <Link href="/besedki" className="block px-4 py-3 text-[#36454F] hover:bg-[#F5F5DC] text-base font-medium border-b border-gray-100">Беседки</Link>
+                <Link href="/ceny" className="block px-4 py-3 text-[#36454F] hover:bg-[#F5F5DC] text-base font-medium border-b border-gray-100">Цены</Link>
+                <Link href="/kontakty" className="block px-4 py-3 text-[#36454F] hover:bg-[#F5F5DC] text-base font-medium">Контакты</Link>
+              </div>
+            </details>
           </div>
         </div>
       </div>
     </header>
-  );
-}
-
-function MobileMenu() {
-  return (
-    <details className="relative">
-      <summary className="list-none text-white cursor-pointer p-2">
-        <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
-        </svg>
-      </summary>
-      <div className="absolute right-0 mt-2 w-48 bg-white rounded-lg shadow-lg py-2 z-50">
-        <Link href="/bany" className="block px-4 py-2 text-[#36454F] hover:bg-[#F5F5DC]">Бани</Link>
-        <Link href="/doma" className="block px-4 py-2 text-[#36454F] hover:bg-[#F5F5DC]">Дома</Link>
-        <Link href="/besedki" className="block px-4 py-2 text-[#36454F] hover:bg-[#F5F5DC]">Беседки</Link>
-        <Link href="/ceny" className="block px-4 py-2 text-[#36454F] hover:bg-[#F5F5DC]">Цены</Link>
-        <Link href="/kontakty" className="block px-4 py-2 text-[#36454F] hover:bg-[#F5F5DC]">Контакты</Link>
-      </div>
-    </details>
   );
 }

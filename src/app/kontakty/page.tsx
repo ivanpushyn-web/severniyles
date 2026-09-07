@@ -20,7 +20,7 @@ export default function KontaktyPage() {
           <span className="text-[#2D4A32]">Контакты</span>
         </nav>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12">
           {/* Contact Info */}
           <div>
             <h1 className="font-serif text-4xl sm:text-5xl font-bold text-[#2D4A32] mb-6">
@@ -91,7 +91,7 @@ export default function KontaktyPage() {
           </div>
 
           {/* Form */}
-          <div className="bg-white rounded-xl p-8 shadow-lg">
+          <div className="bg-white rounded-xl p-6 sm:p-8 shadow-lg">
             <h2 className="font-serif text-2xl font-bold text-[#2D4A32] mb-6">
               Оставить заявку
             </h2>
