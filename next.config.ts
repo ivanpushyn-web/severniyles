@@ -1,8 +1,13 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  // output: "export", // отключаем статический экспорт для SSR
-  // distDir: "dist",
+  output: "export",
+  distDir: "dist",
+  // Добавляем trailingSlash для корректных ссылок
+  trailingSlash: true,
+  // Указываем базовый путь если нужно
+  // basePath: "",
+  // assetPrefix: "",
 };
 
 export default nextConfig;
