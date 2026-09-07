@@ -191,6 +191,67 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Articles */}
+      <section className="py-12 sm:py-20 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6">
+          <h2 className="font-serif text-2xl sm:text-4xl font-bold text-center text-[#2D4A32] mb-8 sm:mb-12">
+            Полезные статьи
+          </h2>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-4 sm:gap-6">
+            <Link
+              href="/stati/ruchnaya-rubka-vs-otsilindrovka"
+              className="bg-[#F5F5DC] rounded-xl p-6 hover:shadow-lg transition group"
+            >
+              <div className="text-xs font-bold text-[#C17817] uppercase tracking-wider mb-2">
+                Технологии
+              </div>
+              <h3 className="font-serif text-lg sm:text-xl font-bold mb-2 group-hover:text-[#C17817] transition">
+                Ручная рубка vs оцилиндровка
+              </h3>
+              <p className="text-sm text-gray-600">
+                Почему сруб ручной работы служит 50+ лет, а оцилиндрованное бревно — нет.
+              </p>
+            </Link>
+            <Link
+              href="/stati/banya-pod-klyuch-chto-vhodit"
+              className="bg-[#F5F5DC] rounded-xl p-6 hover:shadow-lg transition group"
+            >
+              <div className="text-xs font-bold text-[#C17817] uppercase tracking-wider mb-2">
+                Цены
+              </div>
+              <h3 className="font-serif text-lg sm:text-xl font-bold mb-2 group-hover:text-[#C17817] transition">
+                Баня под ключ: что входит в цену
+              </h3>
+              <p className="text-sm text-gray-600">
+                Разбираем составляющие стоимости бани под ключ. Что включено, что отдельно.
+              </p>
+            </Link>
+            <Link
+              href="/stati/kak-vybrat-razmer-bani"
+              className="bg-[#F5F5DC] rounded-xl p-6 hover:shadow-lg transition group"
+            >
+              <div className="text-xs font-bold text-[#C17817] uppercase tracking-wider mb-2">
+                Выбор
+              </div>
+              <h3 className="font-serif text-lg sm:text-xl font-bold mb-2 group-hover:text-[#C17817] transition">
+                Как выбрать размер бани
+              </h3>
+              <p className="text-sm text-gray-600">
+                3×4, 5×3, 5×4 или 6×6? Помогаем определиться с размером бани.
+              </p>
+            </Link>
+          </div>
+          <div className="text-center mt-6 sm:mt-8">
+            <Link
+              href="/stati"
+              className="inline-block border-2 border-[#2D4A32] text-[#2D4A32] hover:bg-[#2D4A32] hover:text-white font-bold py-3 px-6 sm:px-8 rounded-lg transition"
+            >
+              Все статьи →
+            </Link>
+          </div>
+        </div>
+      </section>
+
       {/* CTA */}
       <section className="py-12 sm:py-20 bg-[#2D4A32] text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 text-center">

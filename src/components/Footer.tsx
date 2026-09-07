@@ -31,6 +31,7 @@ export default function Footer() {
             <h3 className="font-serif font-bold mb-4">Информация</h3>
             <ul className="space-y-2 text-gray-300">
               <li><Link href="/ceny" className="hover:text-[#C17817] transition">Цены</Link></li>
+              <li><Link href="/stati" className="hover:text-[#C17817] transition">Статьи</Link></li>
               <li><Link href="/o-nas" className="hover:text-[#C17817] transition">О нас</Link></li>
               <li><Link href="/kontakty" className="hover:text-[#C17817] transition">Контакты</Link></li>
             </ul>

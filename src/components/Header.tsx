@@ -28,6 +28,9 @@ export default function Header() {
             <Link href="/ceny" className="text-white hover:text-[#C17817] transition font-medium">
               Цены
             </Link>
+            <Link href="/stati" className="text-white hover:text-[#C17817] transition font-medium">
+              Статьи
+            </Link>
             <Link href="/kontakty" className="text-white hover:text-[#C17817] transition font-medium">
               Контакты
             </Link>
@@ -45,6 +48,7 @@ export default function Header() {
                 <Link href="/doma" className="block px-4 py-3 text-[#36454F] hover:bg-[#F5F5DC] text-base font-medium border-b border-gray-100">Дома</Link>
                 <Link href="/besedki" className="block px-4 py-3 text-[#36454F] hover:bg-[#F5F5DC] text-base font-medium border-b border-gray-100">Беседки</Link>
                 <Link href="/ceny" className="block px-4 py-3 text-[#36454F] hover:bg-[#F5F5DC] text-base font-medium border-b border-gray-100">Цены</Link>
+                <Link href="/stati" className="block px-4 py-3 text-[#36454F] hover:bg-[#F5F5DC] text-base font-medium border-b border-gray-100">Статьи</Link>
                 <Link href="/kontakty" className="block px-4 py-3 text-[#36454F] hover:bg-[#F5F5DC] text-base font-medium">Контакты</Link>
               </div>
             </details>
