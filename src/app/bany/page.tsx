@@ -74,7 +74,7 @@ export default function BanyPage() {
             >
               <div className="h-48 overflow-hidden relative">
                 <img
-                  src={`/images/${banya.slug === '3x4-kompakt' ? '02-banya-3x4-kompakt' : banya.slug === '5x3-standart' ? '03-banya-5x3-standart' : banya.slug === '5x4-semeynaya' ? '04-banya-5x4-semeynaya' : banya.slug === '6x6-premium' ? '05-banya-6x6-premium' : banya.slug === '6x6-mansarda' ? '06-banya-6x6-mansarda' : '07-banya-5x4-pod-klyuch'}.png`}
+                  src={`/images/${banya.slug === '3x4-kompakt' ? '02-banya-3x4-kompakt' : banya.slug === '5x3-standart' ? '03-banya-5x3-standart' : banya.slug === '5x4-semeynaya' ? '04-banya-5x4-semeynaya' : banya.slug === '6x6-premium' ? '05-banya-6x6-premium' : banya.slug === '6x6-mansarda' ? '06-banya-6x6-mansarda' : '07-banya-5x4-pod-klyuch'}.webp`}
                   alt={banya.name}
                   className="w-full h-full object-cover group-hover:scale-105 transition"
                   loading="lazy"

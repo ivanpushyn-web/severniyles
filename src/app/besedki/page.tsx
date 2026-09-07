@@ -41,7 +41,7 @@ export default function BesedkiPage() {
             >
               <div className="h-48 overflow-hidden relative">
                 <img
-                  src={`/images/${besedka.slug === '3x3-malaya' ? '12-besedka-3x3-malaya' : '13-besedka-4x4-srednyaya'}.png`}
+                  src={`/images/${besedka.slug === '3x3-malaya' ? '12-besedka-3x3-malaya' : '13-besedka-4x4-srednyaya'}.webp`}
                   alt={besedka.name}
                   className="w-full h-full object-cover group-hover:scale-105 transition"
                   loading="lazy"

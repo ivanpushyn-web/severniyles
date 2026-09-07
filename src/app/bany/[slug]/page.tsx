@@ -57,7 +57,7 @@ export default async function ProductPage({ params }: Props) {
           <div>
             <div className="rounded-2xl overflow-hidden h-96 mb-4">
               <img
-                src={`/images/${product.slug === '3x4-kompakt' ? '02-banya-3x4-kompakt' : product.slug === '5x3-standart' ? '03-banya-5x3-standart' : product.slug === '5x4-semeynaya' ? '04-banya-5x4-semeynaya' : product.slug === '6x6-premium' ? '05-banya-6x6-premium' : product.slug === '6x6-mansarda' ? '06-banya-6x6-mansarda' : '07-banya-5x4-pod-klyuch'}.png`}
+                src={`/images/${product.slug === '3x4-kompakt' ? '02-banya-3x4-kompakt' : product.slug === '5x3-standart' ? '03-banya-5x3-standart' : product.slug === '5x4-semeynaya' ? '04-banya-5x4-semeynaya' : product.slug === '6x6-premium' ? '05-banya-6x6-premium' : product.slug === '6x6-mansarda' ? '06-banya-6x6-mansarda' : '07-banya-5x4-pod-klyuch'}.webp`}
                 alt={product.name}
                 className="w-full h-full object-cover"
                 fetchPriority="high"
@@ -67,7 +67,7 @@ export default async function ProductPage({ params }: Props) {
               {['14-detal-russkiy-ugol', '15-faktura-stroganaya-stena', '16-detal-torets-zabolon', '17-tseh-rubka-srub'].map((img, i) => (
                 <div key={i} className="rounded-lg overflow-hidden h-20">
                   <img
-                    src={`/images/${img}.png`}
+                    src={`/images/${img}.webp`}
                     alt="Деталь сруба"
                     className="w-full h-full object-cover"
                     loading="lazy"

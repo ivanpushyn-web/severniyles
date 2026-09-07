@@ -55,7 +55,7 @@ export default async function DomPage({ params }: Props) {
           <div>
             <div className="rounded-2xl overflow-hidden h-96 mb-4">
               <img
-                src={`/images/${product.slug === '6x6-gostevoy' ? '09-dom-6x6-gostevoy' : product.slug === '6x8-semeynyy' ? '10-dom-6x8-semeynyy' : '11-dom-8x10-bolshoy'}.png`}
+                src={`/images/${product.slug === '6x6-gostevoy' ? '09-dom-6x6-gostevoy' : product.slug === '6x8-semeynyy' ? '10-dom-6x8-semeynyy' : '11-dom-8x10-bolshoy'}.webp`}
                 alt={product.name}
                 className="w-full h-full object-cover"
                 fetchPriority="high"
@@ -65,7 +65,7 @@ export default async function DomPage({ params }: Props) {
               {['14-detal-russkiy-ugol', '15-faktura-stroganaya-stena', '16-detal-torets-zabolon', '17-tseh-rubka-srub'].map((img, i) => (
                 <div key={i} className="rounded-lg overflow-hidden h-20">
                   <img
-                    src={`/images/${img}.png`}
+                    src={`/images/${img}.webp`}
                     alt="Деталь сруба"
                     className="w-full h-full object-cover"
                     loading="lazy"

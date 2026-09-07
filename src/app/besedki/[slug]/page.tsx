@@ -55,7 +55,7 @@ export default async function BesedkaPage({ params }: Props) {
           <div>
             <div className="rounded-2xl overflow-hidden h-96 mb-4">
               <img
-                src={`/images/${product.slug === '3x3-malaya' ? '12-besedka-3x3-malaya' : '13-besedka-4x4-srednyaya'}.png`}
+                src={`/images/${product.slug === '3x3-malaya' ? '12-besedka-3x3-malaya' : '13-besedka-4x4-srednyaya'}.webp`}
                 alt={product.name}
                 className="w-full h-full object-cover"
                 fetchPriority="high"
@@ -65,7 +65,7 @@ export default async function BesedkaPage({ params }: Props) {
               {['14-detal-russkiy-ugol', '15-faktura-stroganaya-stena', '16-detal-torets-zabolon', '17-tseh-rubka-srub'].map((img, i) => (
                 <div key={i} className="rounded-lg overflow-hidden h-20">
                   <img
-                    src={`/images/${img}.png`}
+                    src={`/images/${img}.webp`}
                     alt="Деталь сруба"
                     className="w-full h-full object-cover"
                     loading="lazy"

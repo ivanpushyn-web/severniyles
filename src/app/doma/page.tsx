@@ -41,7 +41,7 @@ export default function DomaPage() {
             >
               <div className="h-48 overflow-hidden relative">
                 <img
-                  src={`/images/${dom.slug === '6x6-gostevoy' ? '09-dom-6x6-gostevoy' : dom.slug === '6x8-semeynyy' ? '10-dom-6x8-semeynyy' : '11-dom-8x10-bolshoy'}.png`}
+                  src={`/images/${dom.slug === '6x6-gostevoy' ? '09-dom-6x6-gostevoy' : dom.slug === '6x8-semeynyy' ? '10-dom-6x8-semeynyy' : '11-dom-8x10-bolshoy'}.webp`}
                   alt={dom.name}
                   className="w-full h-full object-cover group-hover:scale-105 transition"
                   loading="lazy"

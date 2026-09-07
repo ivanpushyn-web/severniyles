@@ -57,7 +57,7 @@ export default function ONasPage() {
           </div>
           <div className="rounded-2xl overflow-hidden">
             <img
-              src="/images/18-ruki-plotnika-rubanok.png"
+              src="/images/18-ruki-plotnika-rubanok.webp"
               alt="Плотник строгает бревно рубанком, стружка"
               className="w-full h-full object-cover"
               loading="lazy"
@@ -105,7 +105,7 @@ export default function ONasPage() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-16">
           <div className="rounded-2xl overflow-hidden">
             <img
-              src="/images/21-shtabel-sosny-zima.png"
+              src="/images/21-shtabel-sosny-zima.webp"
               alt="Штабель зимней сосны на лесном складе"
               className="w-full h-full object-cover"
               loading="lazy"
@@ -151,7 +151,7 @@ export default function ONasPage() {
           </div>
           <div className="rounded-2xl overflow-hidden">
             <img
-              src="/images/14-detal-russkiy-ugol.png"
+              src="/images/14-detal-russkiy-ugol.webp"
               alt="Угол сруба в русскую чашу, мох в венцах"
               className="w-full h-full object-cover"
               loading="lazy"

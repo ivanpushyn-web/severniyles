@@ -5,9 +5,9 @@ import { bany, doma, besedki } from "@/data/products";
 
 export default function Home() {
   const categories = [
-    { name: "Бани", count: bany.length, href: "/bany", color: "bg-[#2D4A32]", image: "/images/02-banya-3x4-kompakt.png" },
-    { name: "Дома", count: doma.length, href: "/doma", color: "bg-[#C17817]", image: "/images/09-dom-6x6-gostevoy.png" },
-    { name: "Беседки", count: besedki.length, href: "/besedki", color: "bg-[#B87333]", image: "/images/12-besedka-3x3-malaya.png" },
+    { name: "Бани", count: bany.length, href: "/bany", color: "bg-[#2D4A32]", image: "/images/02-banya-3x4-kompakt.webp" },
+    { name: "Дома", count: doma.length, href: "/doma", color: "bg-[#C17817]", image: "/images/09-dom-6x6-gostevoy.webp" },
+    { name: "Беседки", count: besedki.length, href: "/besedki", color: "bg-[#B87333]", image: "/images/12-besedka-3x3-malaya.webp" },
   ];
 
   return (
@@ -18,7 +18,7 @@ export default function Home() {
       <section className="relative text-white py-32 overflow-hidden">
         <div className="absolute inset-0">
           <img
-            src="/images/01-hero-glavnaya-16x9.png"
+            src="/images/01-hero-glavnaya-16x9.webp"
             alt="Баня ручной рубки из сосны на лесной поляне, Витебская область"
             className="w-full h-full object-cover"
             fetchPriority="high"
@@ -97,7 +97,7 @@ export default function Home() {
               >
                 <div className="h-48 overflow-hidden">
                   <img
-                    src={`/images/${banya.slug === '3x4-kompakt' ? '02-banya-3x4-kompakt' : banya.slug === '5x3-standart' ? '03-banya-5x3-standart' : banya.slug === '5x4-semeynaya' ? '04-banya-5x4-semeynaya' : banya.slug === '6x6-premium' ? '05-banya-6x6-premium' : banya.slug === '6x6-mansarda' ? '06-banya-6x6-mansarda' : '07-banya-5x4-pod-klyuch'}.png`}
+                    src={`/images/${banya.slug === '3x4-kompakt' ? '02-banya-3x4-kompakt' : banya.slug === '5x3-standart' ? '03-banya-5x3-standart' : banya.slug === '5x4-semeynaya' ? '04-banya-5x4-semeynaya' : banya.slug === '6x6-premium' ? '05-banya-6x6-premium' : banya.slug === '6x6-mansarda' ? '06-banya-6x6-mansarda' : '07-banya-5x4-pod-klyuch'}.webp`}
                     alt={banya.name}
                     className="w-full h-full object-cover group-hover:scale-105 transition"
                     loading="lazy"
@@ -150,7 +150,7 @@ export default function Home() {
             <div className="text-center">
               <div className="h-48 rounded-xl overflow-hidden mb-4">
                 <img
-                  src="/images/16-detal-torets-zabolon.png"
+                  src="/images/16-detal-torets-zabolon.webp"
                   alt="Торец соснового бревна: годовые кольца и слой заболони"
                   className="w-full h-full object-cover"
                   loading="lazy"
@@ -165,7 +165,7 @@ export default function Home() {
             <div className="text-center">
               <div className="h-48 rounded-xl overflow-hidden mb-4">
                 <img
-                  src="/images/15-faktura-stroganaya-stena.png"
+                  src="/images/15-faktura-stroganaya-stena.webp"
                   alt="Стена из бревна ручной рубки, строганного рубанком"
                   className="w-full h-full object-cover"
                   loading="lazy"

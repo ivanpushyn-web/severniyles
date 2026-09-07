@@ -35,7 +35,7 @@ export default function PodKlyuchPage() {
           <div className="bg-white rounded-xl overflow-hidden shadow-sm">
             <div className="h-48 overflow-hidden">
               <img
-                src="/images/17-tseh-rubka-srub.png"
+                src="/images/17-tseh-rubka-srub.webp"
                 alt="Рубка сруба вручную: топор и рубанок на бревне"
                 className="w-full h-full object-cover"
                 loading="lazy"
@@ -55,7 +55,7 @@ export default function PodKlyuchPage() {
           <div className="bg-white rounded-xl overflow-hidden shadow-sm">
             <div className="h-48 overflow-hidden">
               <img
-                src="/images/19-sborka-srub-kran.png"
+                src="/images/19-sborka-srub-kran.webp"
                 alt="Сборка сруба краном на фундаменте"
                 className="w-full h-full object-cover"
                 loading="lazy"
@@ -75,7 +75,7 @@ export default function PodKlyuchPage() {
           <div className="bg-white rounded-xl overflow-hidden shadow-sm">
             <div className="h-48 overflow-hidden">
               <img
-                src="/images/20-interer-parnaya.png"
+                src="/images/20-interer-parnaya.webp"
                 alt="Парная из строганого бревна с дровяной печью"
                 className="w-full h-full object-cover"
                 loading="lazy"
