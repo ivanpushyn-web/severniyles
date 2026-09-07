@@ -5,9 +5,9 @@ import { bany, doma, besedki } from "@/data/products";
 
 export default function Home() {
   const categories = [
-    { name: "Бани", count: bany.length, href: "/bany", color: "bg-[#2D4A32]", icon: "🔥" },
-    { name: "Дома", count: doma.length, href: "/doma", color: "bg-[#C17817]", icon: "🏠" },
-    { name: "Беседки", count: besedki.length, href: "/besedki", color: "bg-[#B87333]", icon: "🌿" },
+    { name: "Бани", count: bany.length, href: "/bany", color: "bg-[#2D4A32]", image: "/images/02-banya-3x4-kompakt.png" },
+    { name: "Дома", count: doma.length, href: "/doma", color: "bg-[#C17817]", image: "/images/09-dom-6x6-gostevoy.png" },
+    { name: "Беседки", count: besedki.length, href: "/besedki", color: "bg-[#B87333]", image: "/images/12-besedka-3x3-malaya.png" },
   ];
 
   return (
@@ -15,16 +15,25 @@ export default function Home() {
       <Header />
       
       {/* Hero */}
-      <section className="bg-gradient-to-br from-[#2D4A32] to-[#1a2e1f] text-white py-24">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 text-center">
+      <section className="relative text-white py-32 overflow-hidden">
+        <div className="absolute inset-0">
+          <img
+            src="/images/01-hero-glavnaya-16x9.png"
+            alt="Баня ручной рубки из сосны на лесной поляне, Витебская область"
+            className="w-full h-full object-cover"
+            fetchPriority="high"
+          />
+          <div className="absolute inset-0 bg-gradient-to-r from-[#2D4A32]/80 to-[#2D4A32]/40" />
+        </div>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 relative z-10">
           <h1 className="font-serif text-4xl sm:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
             Из северного леса —<br />под ключ
           </h1>
-          <p className="text-lg sm:text-xl opacity-90 max-w-2xl mx-auto mb-8">
+          <p className="text-lg sm:text-xl opacity-90 max-w-2xl mb-8">
             Бани, дома и беседки ручной рубки из сосны Витебской области. 
             Открытый прайс. Обработка под рубанок.
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+          <div className="flex flex-col sm:flex-row gap-4">
             <Link
               href="/ceny"
               className="inline-block bg-[#C17817] hover:bg-[#a56614] text-white font-bold py-3 px-8 rounded-lg transition"
@@ -60,11 +69,13 @@ export default function Home() {
               <Link
                 key={cat.name}
                 href={cat.href}
-                className={`${cat.color} text-white rounded-2xl p-8 text-center hover:scale-105 transition-transform`}
+                className={`${cat.color} text-white rounded-2xl p-8 text-center hover:scale-105 transition-transform relative overflow-hidden group`}
               >
-                <div className="text-5xl mb-4">{cat.icon}</div>
-                <h3 className="font-serif text-2xl font-bold mb-2">{cat.name}</h3>
-                <p className="opacity-90">{cat.count} проекта</p>
+                <div className="absolute inset-0 bg-black/30 group-hover:bg-black/20 transition" />
+                <div className="relative z-10">
+                  <h3 className="font-serif text-2xl font-bold mb-2">{cat.name}</h3>
+                  <p className="opacity-90">{cat.count} проекта</p>
+                </div>
               </Link>
             ))}
           </div>
@@ -84,8 +95,13 @@ export default function Home() {
                 href={`/bany/${banya.slug}`}
                 className="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition group"
               >
-                <div className="h-48 bg-gradient-to-br from-[#d4a574] to-[#8b6914] flex items-center justify-center text-5xl">
-                  🪵
+                <div className="h-48 overflow-hidden">
+                  <img
+                    src={`/images/${banya.slug === '3x4-kompakt' ? '02-banya-3x4-kompakt' : banya.slug === '5x3-standart' ? '03-banya-5x3-standart' : banya.slug === '5x4-semeynaya' ? '04-banya-5x4-semeynaya' : banya.slug === '6x6-premium' ? '05-banya-6x6-premium' : banya.slug === '6x6-mansarda' ? '06-banya-6x6-mansarda' : '07-banya-5x4-pod-klyuch'}.png`}
+                    alt={banya.name}
+                    className="w-full h-full object-cover group-hover:scale-105 transition"
+                    loading="lazy"
+                  />
                 </div>
                 <div className="p-6">
                   <div className="text-xs font-bold text-[#C17817] uppercase tracking-wider mb-2">
@@ -132,8 +148,13 @@ export default function Home() {
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="text-center">
-              <div className="w-16 h-16 bg-[#C17817] rounded-full flex items-center justify-center text-3xl mx-auto mb-4">
-                🌲
+              <div className="h-48 rounded-xl overflow-hidden mb-4">
+                <img
+                  src="/images/16-detal-torets-zabolon.png"
+                  alt="Торец соснового бревна: годовые кольца и слой заболони"
+                  className="w-full h-full object-cover"
+                  loading="lazy"
+                />
               </div>
               <h3 className="font-serif text-xl font-bold mb-2">Заболонь сохранена</h3>
               <p className="text-gray-600">
@@ -142,8 +163,13 @@ export default function Home() {
               </p>
             </div>
             <div className="text-center">
-              <div className="w-16 h-16 bg-[#C17817] rounded-full flex items-center justify-center text-3xl mx-auto mb-4">
-                🛠️
+              <div className="h-48 rounded-xl overflow-hidden mb-4">
+                <img
+                  src="/images/15-faktura-stroganaya-stena.png"
+                  alt="Стена из бревна ручной рубки, строганного рубанком"
+                  className="w-full h-full object-cover"
+                  loading="lazy"
+                />
               </div>
               <h3 className="font-serif text-xl font-bold mb-2">Обработка под рубанок</h3>
               <p className="text-gray-600">

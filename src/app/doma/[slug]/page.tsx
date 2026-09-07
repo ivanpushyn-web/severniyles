@@ -53,13 +53,23 @@ export default async function DomPage({ params }: Props) {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
           {/* Gallery */}
           <div>
-            <div className="bg-gradient-to-br from-[#d4a574] to-[#8b6914] rounded-2xl h-96 flex items-center justify-center text-8xl mb-4">
-              🏠
+            <div className="rounded-2xl overflow-hidden h-96 mb-4">
+              <img
+                src={`/images/${product.slug === '6x6-gostevoy' ? '09-dom-6x6-gostevoy' : product.slug === '6x8-semeynyy' ? '10-dom-6x8-semeynyy' : '11-dom-8x10-bolshoy'}.png`}
+                alt={product.name}
+                className="w-full h-full object-cover"
+                fetchPriority="high"
+              />
             </div>
             <div className="grid grid-cols-4 gap-2">
-              {[1, 2, 3, 4].map((i) => (
-                <div key={i} className="bg-gray-200 rounded-lg h-20 flex items-center justify-center text-2xl">
-                  🏠
+              {['14-detal-russkiy-ugol', '15-faktura-stroganaya-stena', '16-detal-torets-zabolon', '17-tseh-rubka-srub'].map((img, i) => (
+                <div key={i} className="rounded-lg overflow-hidden h-20">
+                  <img
+                    src={`/images/${img}.png`}
+                    alt="Деталь сруба"
+                    className="w-full h-full object-cover"
+                    loading="lazy"
+                  />
                 </div>
               ))}
             </div>

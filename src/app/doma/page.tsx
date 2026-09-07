@@ -39,8 +39,13 @@ export default function DomaPage() {
               href={`/doma/${dom.slug}`}
               className="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition group"
             >
-              <div className="h-48 bg-gradient-to-br from-[#d4a574] to-[#8b6914] flex items-center justify-center text-5xl relative">
-                🏠
+              <div className="h-48 overflow-hidden relative">
+                <img
+                  src={`/images/${dom.slug === '6x6-gostevoy' ? '09-dom-6x6-gostevoy' : dom.slug === '6x8-semeynyy' ? '10-dom-6x8-semeynyy' : '11-dom-8x10-bolshoy'}.png`}
+                  alt={dom.name}
+                  className="w-full h-full object-cover group-hover:scale-105 transition"
+                  loading="lazy"
+                />
               </div>
               <div className="p-6">
                 <h3 className="font-serif text-xl font-bold mb-2 group-hover:text-[#C17817] transition">

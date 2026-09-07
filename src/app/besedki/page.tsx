@@ -39,8 +39,13 @@ export default function BesedkiPage() {
               href={`/besedki/${besedka.slug}`}
               className="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition group"
             >
-              <div className="h-48 bg-gradient-to-br from-[#d4a574] to-[#8b6914] flex items-center justify-center text-5xl relative">
-                🌿
+              <div className="h-48 overflow-hidden relative">
+                <img
+                  src={`/images/${besedka.slug === '3x3-malaya' ? '12-besedka-3x3-malaya' : '13-besedka-4x4-srednyaya'}.png`}
+                  alt={besedka.name}
+                  className="w-full h-full object-cover group-hover:scale-105 transition"
+                  loading="lazy"
+                />
               </div>
               <div className="p-6">
                 <h3 className="font-serif text-xl font-bold mb-2 group-hover:text-[#C17817] transition">

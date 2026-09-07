@@ -55,13 +55,23 @@ export default async function ProductPage({ params }: Props) {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
           {/* Gallery */}
           <div>
-            <div className="bg-gradient-to-br from-[#d4a574] to-[#8b6914] rounded-2xl h-96 flex items-center justify-center text-8xl mb-4">
-              🪵
+            <div className="rounded-2xl overflow-hidden h-96 mb-4">
+              <img
+                src={`/images/${product.slug === '3x4-kompakt' ? '02-banya-3x4-kompakt' : product.slug === '5x3-standart' ? '03-banya-5x3-standart' : product.slug === '5x4-semeynaya' ? '04-banya-5x4-semeynaya' : product.slug === '6x6-premium' ? '05-banya-6x6-premium' : product.slug === '6x6-mansarda' ? '06-banya-6x6-mansarda' : '07-banya-5x4-pod-klyuch'}.png`}
+                alt={product.name}
+                className="w-full h-full object-cover"
+                fetchPriority="high"
+              />
             </div>
             <div className="grid grid-cols-4 gap-2">
-              {[1, 2, 3, 4].map((i) => (
-                <div key={i} className="bg-gray-200 rounded-lg h-20 flex items-center justify-center text-2xl">
-                  🪵
+              {['14-detal-russkiy-ugol', '15-faktura-stroganaya-stena', '16-detal-torets-zabolon', '17-tseh-rubka-srub'].map((img, i) => (
+                <div key={i} className="rounded-lg overflow-hidden h-20">
+                  <img
+                    src={`/images/${img}.png`}
+                    alt="Деталь сруба"
+                    className="w-full h-full object-cover"
+                    loading="lazy"
+                  />
                 </div>
               ))}
             </div>

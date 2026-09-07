@@ -32,43 +32,64 @@ export default function PodKlyuchPage() {
 
         {/* What's included */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-16">
-          <div className="bg-white rounded-xl p-6 shadow-sm">
-            <div className="w-14 h-14 bg-[#2D4A32] rounded-xl flex items-center justify-center text-2xl mb-4">
-              🪵
+          <div className="bg-white rounded-xl overflow-hidden shadow-sm">
+            <div className="h-48 overflow-hidden">
+              <img
+                src="/images/17-tseh-rubka-srub.png"
+                alt="Рубка сруба вручную: топор и рубанок на бревне"
+                className="w-full h-full object-cover"
+                loading="lazy"
+              />
             </div>
-            <h3 className="font-serif font-bold text-xl mb-3">Сруб</h3>
-            <ul className="text-gray-600 space-y-2">
-              <li className="flex items-center gap-2"><span className="text-[#C17817]">✓</span> Бревно сосны Ø22–25 см</li>
-              <li className="flex items-center gap-2"><span className="text-[#C17817]">✓</span> Ручная рубка (русский/чистый угол)</li>
-              <li className="flex items-center gap-2"><span className="text-[#C17817]">✓</span> Мох в венцах</li>
-              <li className="flex items-center gap-2"><span className="text-[#C17817]">✓</span> Обработка под рубанок</li>
-            </ul>
+            <div className="p-6">
+              <h3 className="font-serif font-bold text-xl mb-3">Сруб</h3>
+              <ul className="text-gray-600 space-y-2">
+                <li className="flex items-center gap-2"><span className="text-[#C17817]">✓</span> Бревно сосны Ø22–25 см</li>
+                <li className="flex items-center gap-2"><span className="text-[#C17817]">✓</span> Ручная рубка (русский/чистый угол)</li>
+                <li className="flex items-center gap-2"><span className="text-[#C17817]">✓</span> Мох в венцах</li>
+                <li className="flex items-center gap-2"><span className="text-[#C17817]">✓</span> Обработка под рубанок</li>
+              </ul>
+            </div>
           </div>
           
-          <div className="bg-white rounded-xl p-6 shadow-sm">
-            <div className="w-14 h-14 bg-[#C17817] rounded-xl flex items-center justify-center text-2xl mb-4">
-              🏗️
+          <div className="bg-white rounded-xl overflow-hidden shadow-sm">
+            <div className="h-48 overflow-hidden">
+              <img
+                src="/images/19-sborka-srub-kran.png"
+                alt="Сборка сруба краном на фундаменте"
+                className="w-full h-full object-cover"
+                loading="lazy"
+              />
             </div>
-            <h3 className="font-serif font-bold text-xl mb-3">Строительство</h3>
-            <ul className="text-gray-600 space-y-2">
-              <li className="flex items-center gap-2"><span className="text-[#C17817]">✓</span> Фундамент (ленточный/свайный)</li>
-              <li className="flex items-center gap-2"><span className="text-[#C17817]">✓</span> Сборка сруба</li>
-              <li className="flex items-center gap-2"><span className="text-[#C17817]">✓</span> Крыша (металлочерепица)</li>
-              <li className="flex items-center gap-2"><span className="text-[#C17817]">✓</span> Окна, двери</li>
-            </ul>
+            <div className="p-6">
+              <h3 className="font-serif font-bold text-xl mb-3">Строительство</h3>
+              <ul className="text-gray-600 space-y-2">
+                <li className="flex items-center gap-2"><span className="text-[#C17817]">✓</span> Фундамент (ленточный/свайный)</li>
+                <li className="flex items-center gap-2"><span className="text-[#C17817]">✓</span> Сборка сруба</li>
+                <li className="flex items-center gap-2"><span className="text-[#C17817]">✓</span> Крыша (металлочерепица)</li>
+                <li className="flex items-center gap-2"><span className="text-[#C17817]">✓</span> Окна, двери</li>
+              </ul>
+            </div>
           </div>
           
-          <div className="bg-white rounded-xl p-6 shadow-sm">
-            <div className="w-14 h-14 bg-[#B87333] rounded-xl flex items-center justify-center text-2xl mb-4">
-              🔥
+          <div className="bg-white rounded-xl overflow-hidden shadow-sm">
+            <div className="h-48 overflow-hidden">
+              <img
+                src="/images/20-interer-parnaya.png"
+                alt="Парная из строганого бревна с дровяной печью"
+                className="w-full h-full object-cover"
+                loading="lazy"
+              />
             </div>
-            <h3 className="font-serif font-bold text-xl mb-3">Отделка</h3>
-            <ul className="text-gray-600 space-y-2">
-              <li className="flex items-center gap-2"><span className="text-[#C17817]">✓</span> Печь (баня) / отопление (дом)</li>
-              <li className="flex items-center gap-2"><span className="text-[#C17817]">✓</span> Электрика</li>
-              <li className="flex items-center gap-2"><span className="text-[#C17817]">✓</span> Сантехника (дом)</li>
-              <li className="flex items-center gap-2"><span className="text-[#C17817]">✓</span> Чистовая отделка</li>
-            </ul>
+            <div className="p-6">
+              <h3 className="font-serif font-bold text-xl mb-3">Отделка</h3>
+              <ul className="text-gray-600 space-y-2">
+                <li className="flex items-center gap-2"><span className="text-[#C17817]">✓</span> Печь (баня) / отопление (дом)</li>
+                <li className="flex items-center gap-2"><span className="text-[#C17817]">✓</span> Электрика</li>
+                <li className="flex items-center gap-2"><span className="text-[#C17817]">✓</span> Сантехника (дом)</li>
+                <li className="flex items-center gap-2"><span className="text-[#C17817]">✓</span> Чистовая отделка</li>
+              </ul>
+            </div>
           </div>
         </div>
 

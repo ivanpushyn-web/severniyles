@@ -72,20 +72,25 @@ export default function BanyPage() {
               href={`/bany/${banya.slug}`}
               className="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition group"
             >
-              <div className="h-48 bg-gradient-to-br from-[#d4a574] to-[#8b6914] flex items-center justify-center text-5xl relative">
-                🪵
+              <div className="h-48 overflow-hidden relative">
+                <img
+                  src={`/images/${banya.slug === '3x4-kompakt' ? '02-banya-3x4-kompakt' : banya.slug === '5x3-standart' ? '03-banya-5x3-standart' : banya.slug === '5x4-semeynaya' ? '04-banya-5x4-semeynaya' : banya.slug === '6x6-premium' ? '05-banya-6x6-premium' : banya.slug === '6x6-mansarda' ? '06-banya-6x6-mansarda' : '07-banya-5x4-pod-klyuch'}.png`}
+                  alt={banya.name}
+                  className="w-full h-full object-cover group-hover:scale-105 transition"
+                  loading="lazy"
+                />
                 {banya.hit && (
-                  <span className="absolute top-4 left-4 bg-[#C17817] text-white text-xs font-bold px-3 py-1 rounded">
+                  <span className="absolute top-4 left-4 bg-[#C17817] text-white text-xs font-bold px-3 py-1 rounded z-10">
                     Хит
                   </span>
                 )}
                 {banya.best && (
-                  <span className="absolute top-4 left-4 bg-[#2D4A32] text-white text-xs font-bold px-3 py-1 rounded">
+                  <span className="absolute top-4 left-4 bg-[#2D4A32] text-white text-xs font-bold px-3 py-1 rounded z-10">
                     Выгодно
                   </span>
                 )}
                 {banya.new && (
-                  <span className="absolute top-4 left-4 bg-[#B87333] text-white text-xs font-bold px-3 py-1 rounded">
+                  <span className="absolute top-4 left-4 bg-[#B87333] text-white text-xs font-bold px-3 py-1 rounded z-10">
                     Новинка
                   </span>
                 )}

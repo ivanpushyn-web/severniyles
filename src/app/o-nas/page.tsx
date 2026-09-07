@@ -55,8 +55,13 @@ export default function ONasPage() {
               </p>
             </div>
           </div>
-          <div className="bg-gradient-to-br from-[#d4a574] to-[#8b6914] rounded-2xl flex items-center justify-center text-9xl">
-            🌲
+          <div className="rounded-2xl overflow-hidden">
+            <img
+              src="/images/18-ruki-plotnika-rubanok.png"
+              alt="Плотник строгает бревно рубанком, стружка"
+              className="w-full h-full object-cover"
+              loading="lazy"
+            />
           </div>
         </div>
 
@@ -96,14 +101,62 @@ export default function ONasPage() {
           </div>
         </div>
 
-        {/* CTA */}
-        <div className="text-center">
-          <Link
-            href="/kontakty"
-            className="inline-block bg-[#C17817] hover:bg-[#a56614] text-white font-bold py-4 px-12 rounded-lg transition text-lg"
-          >
-            Связаться с нами
-          </Link>
+        {/* Second image */}
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-16">
+          <div className="rounded-2xl overflow-hidden">
+            <img
+              src="/images/21-shtabel-sosny-zima.png"
+              alt="Штабель зимней сосны на лесном складе"
+              className="w-full h-full object-cover"
+              loading="lazy"
+            />
+          </div>
+          <div>
+            <h2 className="font-serif text-3xl font-bold text-[#2D4A32] mb-6">
+              Северная сосна
+            </h2>
+            <div className="space-y-4 text-gray-700">
+              <p>
+                Мы используем сосну Витебской области — северную древесину. 
+                Она растёт медленнее, поэтому плотнее и долговечнее южной.
+              </p>
+              <p>
+                Заготовка зимой, когда сокодвижение остановлено. 
+                Древесина суше и меньше трескается.
+              </p>
+              <p>
+                Каждое бревно отбираем вручную: без гнили, без синевы, 
+                с минимальным количеством сучков.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        {/* Third image */}
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-16">
+          <div>
+            <h2 className="font-serif text-3xl font-bold text-[#2D4A32] mb-6">
+              Русская чаша
+            </h2>
+            <div className="space-y-4 text-gray-700">
+              <p>
+                Рубим в русскую чашу — самый тёплый угол. Мох в венцах — 
+                природный утеплитель, который не выдувается и не гниёт.
+              </p>
+              <p>
+                По желанию — канадская чаша для ещё лучшей защиты от ветра. 
+                Обсуждаем на этапе проекта.
+              </p>
+            </div>
+          </div>
+          <div className="rounded-2xl overflow-hidden">
+            <img
+              src="/images/14-detal-russkiy-ugol.png"
+              alt="Угол сруба в русскую чашу, мох в венцах"
+              className="w-full h-full object-cover"
+              loading="lazy"
+            />
+          </div>
         </div>
       </main>
 
