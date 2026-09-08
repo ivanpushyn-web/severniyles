@@ -1,0 +1,75 @@
+@import "tailwindcss";
+
+@theme inline {
+  --color-primary: #2D4A32;
+  --color-primary-dark: #1a2e1f;
+  --color-accent: #C17817;
+  --color-copper: #B87333;
+  --color-bg: #F5F5DC;
+  --color-text: #36454F;
+  --color-text-light: #666666;
+}
+
+:root {
+  --background: #F5F5DC;
+  --foreground: #36454F;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: 'PT Sans', Arial, sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'PT Serif', Georgia, serif;
+}
+
+/* Rich-text article body (Payload Lexical output) */
+.article-body { font-size: 1.0625rem; }
+.article-body > * + * { margin-top: 1rem; }
+.article-body h2 {
+  color: #2D4A32;
+  font-size: 1.75rem;
+  font-weight: 700;
+  margin-top: 2.5rem;
+  margin-bottom: 1rem;
+  line-height: 1.25;
+}
+.article-body h3 {
+  color: #2D4A32;
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin-top: 2rem;
+  margin-bottom: 0.75rem;
+}
+.article-body p { line-height: 1.75; }
+.article-body strong { color: #2D4A32; font-weight: 700; }
+.article-body a { color: #C17817; text-decoration: underline; }
+.article-body ul { list-style: disc; padding-left: 1.5rem; }
+.article-body ol { list-style: decimal; padding-left: 1.5rem; }
+.article-body li { margin-top: 0.35rem; }
+.article-body blockquote {
+  border-left: 3px solid #C17817;
+  padding-left: 1rem;
+  color: #555;
+  font-style: italic;
+}
+.article-body table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1.5rem 0;
+  display: block;
+  overflow-x: auto;
+}
+.article-body th {
+  background: #2D4A32;
+  color: #fff;
+  text-align: left;
+  padding: 0.75rem 1rem;
+}
+.article-body td {
+  padding: 0.75rem 1rem;
+  border-top: 1px solid #e5e7eb;
+}
+.article-body img { border-radius: 0.75rem; margin: 1.5rem 0; }
