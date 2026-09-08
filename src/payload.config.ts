@@ -3,6 +3,7 @@ import { fileURLToPath } from "url";
 
 import { postgresAdapter } from "@payloadcms/db-postgres";
 import { lexicalEditor } from "@payloadcms/richtext-lexical";
+import { s3Storage } from "@payloadcms/storage-s3";
 import { buildConfig } from "payload";
 import sharp from "sharp";
 
@@ -45,6 +46,28 @@ export default buildConfig({
   sharp,
   cors: serverURL ? [serverURL] : [],
   csrf: serverURL ? [serverURL] : [],
+  plugins: [
+    // The app's filesystem is wiped on every deploy, so uploaded media must
+    // live in S3 rather than on local disk. In local dev (no S3 env vars)
+    // this plugin is skipped and uploads fall back to the local disk.
+    ...(process.env.S3_BUCKET
+      ? [
+          s3Storage({
+            collections: { media: true },
+            bucket: process.env.S3_BUCKET,
+            config: {
+              endpoint: process.env.S3_ENDPOINT,
+              region: process.env.S3_REGION || "ru-1",
+              forcePathStyle: true,
+              credentials: {
+                accessKeyId: process.env.S3_ACCESS_KEY || "",
+                secretAccessKey: process.env.S3_SECRET_KEY || "",
+              },
+            },
+          }),
+        ]
+      : []),
+  ],
   async onInit(payload) {
     if (process.env.PAYLOAD_DISABLE_SEED === "true") return;
     try {
